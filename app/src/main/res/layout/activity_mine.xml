@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.fitness.com.fitness.Activities.MineActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="我的帐户"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"/>
+        <TextView
+            android:id="@+id/mydetails"
+            android:text="..."
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:gravity="right"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+    <View
+        android:background="#616161"
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+
+    </View>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/mine_photo"
+                android:src="@drawable/head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:text="Melissa House"
+                android:textSize="30dp"
+                android:textColor="#000000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:id="@+id/mine_name" />
+
+            <LinearLayout
+                android:id="@+id/friends_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="50dp">
+
+                <TextView
+                    android:text="邀请好友"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:text=">"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="#616161"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:gravity="right"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <View
+                android:background="#eeeeee"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+
+            </View>
+            <LinearLayout
+                android:id="@+id/cardbox_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="卡卷包    "
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:text=">"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="#616161"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:gravity="right"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <View
+                android:background="#eeeeee"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+
+            </View>
+            <LinearLayout
+                android:id="@+id/collection_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="我的收藏"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:text=">"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="#616161"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:gravity="right"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <View
+                android:background="#eeeeee"
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+
+            </View>
+
+            <LinearLayout
+                android:id="@+id/set_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="设置        "
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:text=">"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="#616161"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:gravity="right"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <View
+                android:background="#eeeeee"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+
+            </View>
+            <LinearLayout
+                android:id="@+id/userdeal_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="用户协议"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:text=">"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="#616161"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:gravity="right"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <View
+                android:background="#eeeeee"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+
+            </View>
+            <LinearLayout
+                android:id="@+id/contactus_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="联系我们"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:text=">"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="#616161"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:gravity="right"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <View
+                android:background="#eeeeee"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+
+            </View>
+            <LinearLayout
+                android:id="@+id/aboutus_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="关于        "
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:text=">"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="#616161"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:gravity="right"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <View
+                android:background="#eeeeee"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+
+            </View>
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom">
+
+        <include layout="@layout/bottom_layout" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

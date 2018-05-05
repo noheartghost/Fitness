@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.fitness.com.fitness.Activities.GymActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/gym_backimg"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/app_nick"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/gym_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/search_icon" />
+
+    </LinearLayout>
+
+    <View
+        android:background="#616161"
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+
+    </View>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom">
+
+        <include layout="@layout/gym_bottom_layout" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/gym_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/gym_photo"
+                android:src="@drawable/gym"
+                android:layout_width="400dp"
+                android:layout_height="250dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/gym_name"
+                        android:text="宝力豪健身（大悦城南区）"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"/>
+
+                    <TextView
+                        android:id="@+id/gym_location"
+                        android:text="南开区南门外大街2-6号天津大悦城南区B1层B1-81"
+                        android:textColor="#212121"
+                        android:textSize="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"/>
+                    <RatingBar
+                        style="@style/Widget.AppCompat.RatingBar.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:rating="4.5"
+                        android:layout_marginTop="20dp"
+                        ></RatingBar>
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:src="@drawable/place"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="20dp">
+
+                <View
+                    android:background="#616161"
+                    android:layout_width="300dp"
+                    android:layout_height="1dp"
+                    >
+                </View>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:text="所属教练"
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <app.fitness.com.fitness.tools.HorizontalListView
+                    android:id="@+id/horizontallistview1"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/coach_img"
+                    android:src="@drawable/coach"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/time_btn"
+                    android:text="选择日期"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/regbtn"
+                    android:layout_marginTop="20dp"/>
+                <TextView
+                    android:text="预定"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"/>
+                <View
+                    android:background="#616161"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    >
+                </View>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/gym_card_name"
+                            android:text="单次健身卡"
+                            android:textSize="15dp"
+                            android:textColor="#000000"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/gym_card_price"
+                            android:text="65￥"
+                            android:textColor="#ff0000"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginRight="30dp">
+
+                        <Button
+                            android:id="@+id/order_btn"
+                            android:text="预定"
+                            android:textSize="10dp"
+                            android:background="@drawable/regbtn"
+                            android:layout_width="50dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="right"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <View
+                    android:background="#919191"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    >
+                </View>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:text="健身周卡"
+                            android:textSize="15dp"
+                            android:textColor="#000000"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:text="350￥"
+                            android:textColor="#ff0000"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginRight="30dp">
+
+                        <Button
+                            android:text="预定"
+                            android:textSize="10dp"
+                            android:background="@drawable/regbtn"
+                            android:layout_width="50dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="right"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <View
+                    android:background="#919191"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    >
+                </View>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:text="单次月卡"
+                            android:textSize="15dp"
+                            android:textColor="#000000"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:text="1500￥"
+                            android:textColor="#ff0000"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginRight="30dp">
+
+                        <Button
+                            android:text="预定"
+                            android:textSize="10dp"
+                            android:background="@drawable/regbtn"
+                            android:layout_width="50dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="right"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <View
+                    android:background="#919191"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    >
+                </View>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
