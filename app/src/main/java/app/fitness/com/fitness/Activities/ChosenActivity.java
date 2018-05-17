@@ -196,6 +196,7 @@ public class ChosenActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(ChosenActivity.this, RoundActivity.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.in_from_right, R.anim.out_to_left);
                 ChosenActivity.this.finish();
             }
         });
@@ -209,6 +210,7 @@ public class ChosenActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(ChosenActivity.this, DealActivity.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.in_from_right, R.anim.out_to_left);
                 ChosenActivity.this.finish();
             }
         });
@@ -222,6 +224,7 @@ public class ChosenActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(ChosenActivity.this, MineActivity.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.in_from_right, R.anim.out_to_left);
                 ChosenActivity.this.finish();
             }
         });

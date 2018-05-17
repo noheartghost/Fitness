@@ -23,10 +23,15 @@
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.MainActivity" />
+        <activity android:name=".Activities.MainActivity" >
+        </activity>
         <activity android:name=".Activities.WelcomeActivity" />
         <activity android:name=".Activities.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".Activities.RegisterActivity" />
         <activity android:name=".Activities.GymActivity" />
@@ -62,11 +67,7 @@
         <activity android:name=".Activities.AboutUsActivity" />
         <activity android:name=".Activities.ContactUsActivity" />
         <activity android:name=".Activities.Pay">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 

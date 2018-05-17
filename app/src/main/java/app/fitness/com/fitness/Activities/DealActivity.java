@@ -82,6 +82,7 @@ public class DealActivity extends TabActivity implements AdapterView.OnItemClick
             public void onClick(View v) {
                 Intent intent = new Intent(DealActivity.this, ChosenActivity.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.in_from_right, R.anim.out_to_left);
                 DealActivity.this.finish();
             }
         });
@@ -95,6 +96,7 @@ public class DealActivity extends TabActivity implements AdapterView.OnItemClick
             public void onClick(View v) {
                 Intent intent = new Intent(DealActivity.this, RoundActivity.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.in_from_right, R.anim.out_to_left);
                 DealActivity.this.finish();
             }
         });
@@ -113,6 +115,7 @@ public class DealActivity extends TabActivity implements AdapterView.OnItemClick
             public void onClick(View v) {
                 Intent intent = new Intent(DealActivity.this, MineActivity.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.in_from_right, R.anim.out_to_left);
                 DealActivity.this.finish();
             }
         });

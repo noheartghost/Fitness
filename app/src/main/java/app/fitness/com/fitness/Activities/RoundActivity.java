@@ -65,7 +65,7 @@ public class RoundActivity extends AppCompatActivity {
         initBottom();
 
         listView=(ListView)findViewById(R.id.round_list);
-        list = new ArrayList<Map<String, Object>>();
+        list = new ArrayList<>();
         getData();
 
         editiv = (ImageView)findViewById(R.id.editiv);
@@ -101,6 +101,7 @@ public class RoundActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(RoundActivity.this, ChosenActivity.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.in_from_right, R.anim.out_to_left);
                 RoundActivity.this.finish();
             }
         });
@@ -119,6 +120,7 @@ public class RoundActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(RoundActivity.this, DealActivity.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.in_from_right, R.anim.out_to_left);
                 RoundActivity.this.finish();
             }
         });
@@ -132,6 +134,7 @@ public class RoundActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(RoundActivity.this, MineActivity.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.in_from_right, R.anim.out_to_left);
                 RoundActivity.this.finish();
             }
         });
@@ -179,6 +182,7 @@ public class RoundActivity extends AppCompatActivity {
      */
     private void extractPostAndComment(String Input) {
         Gson gson = new Gson();
+        Log.i(TAG, "Input: "+Input);
         postAndComments = gson.fromJson(Input, new TypeToken<List<PostAndComments>>() {
         }.getType());
         Log.i(TAG, "extractPostAndComment: "+postAndComments.get(0).getPost().getTitle());

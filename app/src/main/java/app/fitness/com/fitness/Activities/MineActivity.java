@@ -119,6 +119,7 @@ public class MineActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MineActivity.this, ChosenActivity.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.in_from_right, R.anim.out_to_left);
                 MineActivity.this.finish();
             }
         });
@@ -132,6 +133,7 @@ public class MineActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MineActivity.this, RoundActivity.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.in_from_right, R.anim.out_to_left);
                 MineActivity.this.finish();
             }
         });
@@ -145,6 +147,7 @@ public class MineActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MineActivity.this, DealActivity.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.in_from_right, R.anim.out_to_left);
                 MineActivity.this.finish();
             }
         });

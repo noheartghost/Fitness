@@ -37,11 +37,11 @@ public class LoginAdapter extends Thread{
             NewPost newPost = new NewPost();
             StringChange stringChange = new StringChange();
             /**
-             * 之后在参数中添加的是password_afterchange，删除掉下面一行就可以了
+             * 之后在参数中添加的是password_afterchange，删除掉下面一行就可以了,加密问题待解决
              */
             String password_afterchange = stringChange.eccrypt(password);
-            password = ",�b�Y\u0007[�K\u0007\u0015-#Kp";
-            String param = "name="+userName+"&password="+password_afterchange;
+            //password = ",�b�Y\u0007[�K\u0007\u0015-#Kp";
+            String param = "name="+userName+"&password="+password;//_afterchange;
             String result = "";
             result = newPost.sendPost(url, param);
             if (result.isEmpty()) {

@@ -6,7 +6,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.os.StrictMode;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -18,39 +17,15 @@ import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.appindexing.Thing;
 import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.common.server.converter.StringToIntConverter;
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
 
-import org.apache.http.HttpEntity;
-import org.apache.http.HttpResponse;
-import org.apache.http.HttpStatus;
-import org.apache.http.NameValuePair;
-import org.apache.http.ParseException;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.entity.UrlEncodedFormEntity;
-import org.apache.http.client.methods.HttpPost;
-import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.http.message.BasicNameValuePair;
-import org.apache.http.protocol.HTTP;
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import java.io.IOException;
-import java.io.InputStream;
-import java.sql.Blob;
-import java.util.ArrayList;
-import java.util.List;
 
 import app.fitness.com.fitness.Adapters.GetUserPhoto;
 import app.fitness.com.fitness.Adapters.LoginAdapter;
 import app.fitness.com.fitness.App.MyApp;
 import app.fitness.com.fitness.R;
-import app.fitness.com.fitness.util.GymNear;
 import app.fitness.com.fitness.util.User;
-
-import static android.R.attr.type;
-import static app.fitness.com.fitness.R.drawable.person;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -61,7 +36,7 @@ public class LoginActivity extends AppCompatActivity {
     Button regisbtn;
     MyApp myApp;
 
-    final String url = "http://192.168.1.103:8080/fitness/LoginServlet";//47.94.0.163
+    final String url = "http://47.94.0.163:8080/fitness/LoginServlet";//47.94.0.163
     String username, password;
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
@@ -96,7 +71,6 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
                 startActivity(intent);
-                LoginActivity.this.finish();
             }
         });
 
@@ -169,7 +143,6 @@ public class LoginActivity extends AppCompatActivity {
             }else if (message.arg1==3) {
                 Log.i(TAG, "get photo fail ");
             }
-
             return true;
         }
     }
